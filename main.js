@@ -4,8 +4,9 @@ const posts = [
         "content": "Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.",
         "media": "https://unsplash.it/600/300?image=171",
         "author": {
-            "name": "Phil Mangione",
-            "image": "https://unsplash.it/300/300?image=15"
+            "name": "Phil ",
+            "last name":"Mangione",
+            "image": null
         },
         "likes": 80,
         "created": "2021-06-25"
@@ -15,7 +16,8 @@ const posts = [
         "content": "Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.",
         "media": "https://unsplash.it/600/400?image=112",
         "author": {
-            "name": "Sofia Perlari",
+            "name": "Sofia ",
+            "last name":"Perlari",
             "image": "https://unsplash.it/300/300?image=10"
         },
         "likes": 120,
@@ -26,7 +28,8 @@ const posts = [
         "content": "Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.",
         "media": "https://unsplash.it/600/400?image=234",
         "author": {
-            "name": "Chiara Passaro",
+            "name": "Chiara ",
+            "last name":"Passaro",
             "image": "https://unsplash.it/300/300?image=20"
         },
         "likes": 78,
@@ -37,7 +40,8 @@ const posts = [
         "content": "Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.",
         "media": "https://unsplash.it/600/400?image=24",
         "author": {
-            "name": "Luca Formicola",
+            "name": "Luca ",
+            "last name":"Formicola",
             "image": "https://unsplash.it/600/400?image=24"
         },
         "likes": 56,
@@ -48,7 +52,8 @@ const posts = [
         "content": "Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.",
         "media": "https://unsplash.it/600/400?image=534",
         "author": {
-            "name": "Alessandro Sainato",
+            "name": "Alessandro ",
+            "last name":"Sainato",
             "image": "https://unsplash.it/300/300?image=29"
         },
         "likes": 95,
@@ -59,7 +64,8 @@ const posts = [
         "content": "Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.",
         "media": "https://unsplash.it/600/400?image=34",
         "author": {
-            "name": "Luca Formicola",
+            "name": "Fabrizio ",
+            "last name":"Spini",
             "image": "https://unsplash.it/300/300?image=34"
         },
         "likes": 59,
@@ -70,7 +76,8 @@ const posts = [
         "content": "Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.",
         "media": "https://unsplash.it/600/400?image=34",
         "author": {
-            "name": "Luca Formicola",
+            "name": "Neri ",
+            "last name":"Saverio",
             "image": "https://unsplash.it/300/300?image=289"
         },
         "likes": 96,
@@ -81,7 +88,8 @@ const posts = [
         "content": "Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.",
         "media": "https://unsplash.it/600/400?image=355",
         "author": {
-            "name": "Luca Formicola",
+            "name": "Gaetano ",
+            "last name":"Fedele",
             "image": "https://unsplash.it/300/300?image=355"
         },
         "likes": 996,
@@ -92,7 +100,8 @@ const posts = [
         "content": "Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.",
         "media": "https://unsplash.it/600/400?image=344",
         "author": {
-            "name": "Luca Formicola",
+            "name": "Maura ",
+            "last name":"Brivio",
             "image": "https://unsplash.it/300/300?image=344"
         },
         "likes": 956,
@@ -103,7 +112,8 @@ const posts = [
         "content": "Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.",
         "media": "https://unsplash.it/600/400?image=374",
         "author": {
-            "name": "Luca Formicola",
+            "name": "Antonella ",
+            "last name":"Bosco",
             "image": "https://unsplash.it/300/300?image=374"
         },
         "likes": 963,
@@ -114,8 +124,9 @@ const posts = [
         "content": "Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.",
         "media": "https://unsplash.it/600/400?image=314",
         "author": {
-            "name": "Luca Formicola",
-            "image": "https://unsplash.it/300/300?image=314"
+            "name": "Cosimo ",
+            "last name":"Pompeo",
+            "image": null
         },
         "likes": 496,
         "created": "2021-04-03"
@@ -125,7 +136,8 @@ const posts = [
         "content": "Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.",
         "media": "https://unsplash.it/600/400?image=341",
         "author": {
-            "name": "Luca Formicola",
+            "name": "Piazza ",
+            "last name":"Gloria",
             "image": "https://unsplash.it/300/300?image=341"
         },
         "likes": 986,
@@ -136,7 +148,8 @@ const posts = [
         "content": "Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.",
         "media": "https://unsplash.it/600/400?image=384",
         "author": {
-            "name": "Luca Formicola",
+            "name": "Agnellini ",
+            "last name":"Marcellino",
             "image": "https://unsplash.it/300/300?image=384"
         },
         "likes": 97,
@@ -147,8 +160,9 @@ const posts = [
         "content": "Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.",
         "media": "https://unsplash.it/600/400?image=371",
         "author": {
-            "name": "Luca Formicola",
-            "image": "https://unsplash.it/300/300?image=371"
+            "name": "Emanuela ",
+            "last name":"Germano",
+            "image": null
         },
         "likes": 91,
         "created": "2021-04-03"
@@ -163,53 +177,100 @@ let convertDate=function(Date){
     day=Date.substring(8,10);
     return day+'/'+month+'/'+year;
 }
+let generateProfileImg=(letter1,letter2)=> `
+                                            <div class="profile-pic-default">
+                                            <span>${letter1}${letter2}</span>
+                                            </div>
+`;
 
 posts.forEach((postObject)=>{
+    let post;
     postObject.created=convertDate(postObject.created);
 
-    let post= `
-    <div class="post">
-    <div class="post__header">
-        <div class="post-meta">                    
-            <div class="post-meta__icon">
-                <img class="profile-pic" src="${postObject["author"]["image"]}" alt="${postObject["author"]["name"]}">                    
+    if(postObject["author"]["image"]==null){
+        postObject["author"]["image"]=generateProfileImg(postObject["author"]["name"].charAt(0),postObject["author"]["last name"].charAt(0));
+        post= `
+        <div class="post">
+        <div class="post__header">
+            <div class="post-meta">                    
+                <div class="post-meta__icon">
+                ${postObject["author"]["image"]}                    
+                </div>
+                <div class="post-meta__data">
+                    <div class="post-meta__author">${postObject["author"]["name"]}${postObject["author"]["last name"]}</div>
+                    <div class="post-meta__time">${postObject["created"]}</div>
+                </div>                    
             </div>
-            <div class="post-meta__data">
-                <div class="post-meta__author">${postObject["author"]["name"]}</div>
-                <div class="post-meta__time">${postObject["created"]}</div>
-            </div>                    
         </div>
-    </div>
-    <div class="post__text">Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.</div>
-    <div class="post__image">
-        <img src="${postObject["media"]}" alt="">
-    </div>
-    <div class="post__footer">
-        <div class="likes js-likes">
-            <div class="likes__cta">
-                <a class="like-button  js-like-button"  data-postid="1">
-                    <i class="like-button__icon fas fa-thumbs-up" aria-hidden="true"></i>
-                    <span class="like-button__label">Mi Piace</span>
-                </a>
+        <div class="post__text">Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.</div>
+            <div class="post__image">
+                <img src="${postObject["media"]}" alt="">
             </div>
-            <div class="likes__counter">
-                Piace a <b id="like-counter-1" class="js-likes-counter">${postObject["likes"]}</b> persone
+            <div class="post__footer">
+                <div class="likes js-likes">
+                    <div class="likes__cta">
+                        <a class="like-button  js-like-button"  data-postid="1">
+                            <i class="like-button__icon fas fa-thumbs-up" aria-hidden="true"></i>
+                            <span class="like-button__label">Mi Piace</span>
+                        </a>
+                    </div>
+                    <div class="likes__counter">
+                        Piace a <b id="like-counter-1" class="js-likes-counter">${postObject["likes"]}</b> persone
+                    </div>
+                </div> 
+            </div>            
+        </div>`;
+    }
+
+
+    else{
+        post= `
+        <div class="post">
+        <div class="post__header">
+            <div class="post-meta">                    
+                <div class="post-meta__icon">
+                    <img class="profile-pic" src="${postObject["author"]["image"]}" alt="${postObject["author"]["name"]}${postObject["author"]["last name"]}">                    
+                </div>
+                <div class="post-meta__data">
+                    <div class="post-meta__author">${postObject["author"]["name"]}${postObject["author"]["last name"]}</div>
+                    <div class="post-meta__time">${postObject["created"]}</div>
+                </div>                    
             </div>
-        </div> 
-    </div>            
-</div>`;
+        </div>
+        <div class="post__text">Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.</div>
+            <div class="post__image">
+                <img src="${postObject["media"]}" alt="">
+            </div>
+            <div class="post__footer">
+                <div class="likes js-likes">
+                    <div class="likes__cta">
+                        <a class="like-button  js-like-button"  data-postid="1">
+                            <i class="like-button__icon fas fa-thumbs-up" aria-hidden="true"></i>
+                            <span class="like-button__label">Mi Piace</span>
+                        </a>
+                    </div>
+                    <div class="likes__counter">
+                        Piace a <b id="like-counter-1" class="js-likes-counter">${postObject["likes"]}</b> persone
+                    </div>
+                </div> 
+            </div>            
+        </div>`;}
 Container.innerHTML+=post;
 
 });
 
 let likeButton=document.querySelectorAll(".like-button");
+let likeCounter=document.querySelectorAll(".js-likes-counter");
 for(let i=0;i<likeButton.length;i++){
-
     likeButton[i].addEventListener("click",function(){
         this.classList.toggle('like-button--liked');
-        if(likeButton[i].classList.includes("like-button--liked")){
+
+        if(likeButton[i].classList.contains("like-button--liked"))
             posts[i].likes++;
-        }
+        else
+            posts[i].likes--;
+
+        likeCounter[i].innerHTML=posts[i].likes;
     });
 
 }
