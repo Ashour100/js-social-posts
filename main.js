@@ -74,7 +74,7 @@ const posts = [
     {
         "id": 7,
         "content": "Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.",
-        "media": "https://unsplash.it/600/400?image=34",
+        "media": "https://unsplash.it/600/400?image=289",
         "author": {
             "name": "Neri ",
             "last name":"Saverio",
@@ -168,13 +168,13 @@ const posts = [
         "created": "2021-04-03"
     }
 ];
-let Container=document.getElementById("container");
 
+let container=document.getElementById("container");
 
-let convertDate=function(Date){
-    year=Date.substring(0,4);
-    month=Date.substring(5,7);
-    day=Date.substring(8,10);
+let convertDate=function(date){
+    year=date.substring(0,4);
+    month=date.substring(5,7);
+    day=date.substring(8,10);
     return day+'/'+month+'/'+year;
 }
 let generateProfileImg=(letter1,letter2)=> `
@@ -184,21 +184,17 @@ let generateProfileImg=(letter1,letter2)=> `
 `;
 
 posts.forEach((postObject)=>{
-    let post;
-    postObject.created=convertDate(postObject.created);
-
-    if(postObject["author"]["image"]==null){
-        postObject["author"]["image"]=generateProfileImg(postObject["author"]["name"].charAt(0),postObject["author"]["last name"].charAt(0));
-        post= `
+    let convertedDate=convertDate(postObject.created);
+    let post= `
         <div class="post">
         <div class="post__header">
             <div class="post-meta">                    
                 <div class="post-meta__icon">
-                ${postObject["author"]["image"]}                    
+                    
                 </div>
                 <div class="post-meta__data">
                     <div class="post-meta__author">${postObject["author"]["name"]}${postObject["author"]["last name"]}</div>
-                    <div class="post-meta__time">${postObject["created"]}</div>
+                    <div class="post-meta__time">${convertedDate}</div>
                 </div>                    
             </div>
         </div>
@@ -220,44 +216,19 @@ posts.forEach((postObject)=>{
                 </div> 
             </div>            
         </div>`;
-    }
-
-
-    else{
-        post= `
-        <div class="post">
-        <div class="post__header">
-            <div class="post-meta">                    
-                <div class="post-meta__icon">
-                    <img class="profile-pic" src="${postObject["author"]["image"]}" alt="${postObject["author"]["name"]}${postObject["author"]["last name"]}">                    
-                </div>
-                <div class="post-meta__data">
-                    <div class="post-meta__author">${postObject["author"]["name"]}${postObject["author"]["last name"]}</div>
-                    <div class="post-meta__time">${postObject["created"]}</div>
-                </div>                    
-            </div>
-        </div>
-        <div class="post__text">Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.</div>
-            <div class="post__image">
-                <img src="${postObject["media"]}" alt="">
-            </div>
-            <div class="post__footer">
-                <div class="likes js-likes">
-                    <div class="likes__cta">
-                        <a class="like-button  js-like-button"  data-postid="1">
-                            <i class="like-button__icon fas fa-thumbs-up" aria-hidden="true"></i>
-                            <span class="like-button__label">Mi Piace</span>
-                        </a>
-                    </div>
-                    <div class="likes__counter">
-                        Piace a <b id="like-counter-1" class="js-likes-counter">${postObject["likes"]}</b> persone
-                    </div>
-                </div> 
-            </div>            
-        </div>`;}
-Container.innerHTML+=post;
-
+container.innerHTML+=post;
 });
+
+
+let imageWrapper=document.querySelectorAll('.post-meta__icon');
+for(let i=0;i<posts.length;i++){
+    if(posts[i]["author"]["image"]==null)
+        imageWrapper[i].innerHTML=generateProfileImg(posts[i]["author"]["name"].charAt(0),posts[i]["author"]["last name"].charAt(0));
+    else
+        imageWrapper[i].innerHTML=`<img class="profile-pic" src="${posts[i]["author"]["image"]}" alt="${posts[i]["author"]["name"]}${posts[i]["author"]["last name"]}">`;
+}
+
+
 
 let likeButton=document.querySelectorAll(".like-button");
 let likeCounter=document.querySelectorAll(".js-likes-counter");
