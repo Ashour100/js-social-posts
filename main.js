@@ -169,15 +169,17 @@ const posts = [
     }
 ];
 
-let container=document.getElementById("container");
+const likedPosts=[];
 
-let convertDate=function(date){
+const container=document.getElementById("container");
+
+const convertDate=function(date){
     year=date.substring(0,4);
     month=date.substring(5,7);
     day=date.substring(8,10);
     return day+'/'+month+'/'+year;
 }
-let generateProfileImg=(letter1,letter2)=> `
+const generateProfileImg=(letter1,letter2)=> `
                                             <div class="profile-pic-default">
                                             <span>${letter1}${letter2}</span>
                                             </div>
@@ -205,7 +207,7 @@ posts.forEach((postObject)=>{
             <div class="post__footer">
                 <div class="likes js-likes">
                     <div class="likes__cta">
-                        <a class="like-button  js-like-button"  data-postid="1">
+                        <a class="like-button  js-like-button"  data-postid="${postObject["id"]}">
                             <i class="like-button__icon fas fa-thumbs-up" aria-hidden="true"></i>
                             <span class="like-button__label">Mi Piace</span>
                         </a>
@@ -220,7 +222,7 @@ container.innerHTML+=post;
 });
 
 
-let imageWrapper=document.querySelectorAll('.post-meta__icon');
+const imageWrapper=document.querySelectorAll('.post-meta__icon');
 for(let i=0;i<posts.length;i++){
     if(posts[i]["author"]["image"]==null)
         imageWrapper[i].innerHTML=generateProfileImg(posts[i]["author"]["name"].charAt(0),posts[i]["author"]["last name"].charAt(0));
@@ -230,8 +232,8 @@ for(let i=0;i<posts.length;i++){
 
 
 
-let likeButton=document.querySelectorAll(".like-button");
-let likeCounter=document.querySelectorAll(".js-likes-counter");
+const likeButton=document.querySelectorAll(".like-button");
+const likeCounter=document.querySelectorAll(".js-likes-counter");
 for(let i=0;i<likeButton.length;i++){
     likeButton[i].addEventListener("click",function(){
         this.classList.toggle('like-button--liked');
@@ -242,7 +244,7 @@ for(let i=0;i<likeButton.length;i++){
             posts[i].likes--;
 
         likeCounter[i].innerHTML=posts[i].likes;
+        likedPosts.push(posts[i].id);
+        console.log(likedPosts);
     });
-
 }
-
